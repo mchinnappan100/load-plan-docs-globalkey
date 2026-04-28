@@ -1,0 +1,64 @@
+[
+  {
+    "object": "Manufacturer__c",
+    "compositeKeys": [
+      "Global_Key__c"
+    ],
+    "compositeKeys_v1": [
+      "Name"
+    ],
+    "query": "SELECT Global_Key__c, Name, Country__c FROM Manufacturer__c",
+    "query_v1": "SELECT Name, Country__c FROM Manufacturer__c",
+    "fieldMappings": {
+      "Global_Key__c": "Global_Key__c",
+      "Name": "Name",
+      "Country__c": "Country__c"
+    }
+  },
+  {
+    "object": "VehicleCustomer__c",
+    "compositeKeys": [
+      "Global_Key__c"
+    ],
+    "compositeKeys_v1": [
+      "Name"
+    ],
+    "query": "SELECT Global_Key__c, Name, Email__c FROM VehicleCustomer__c",
+    "query_v1": "SELECT Name, Email__c FROM VehicleCustomer__c",
+    "fieldMappings": {
+      "Global_Key__c": "Global_Key__c",
+      "Name": "Name",
+      "Email__c": "Email__c"
+    }
+  },
+  {
+    "object": "Vehicle__c",
+    "compositeKeys": [
+      "Global_Key__c"
+    ],
+    "compositeKeys_v1": [
+      "Name"
+    ],
+    "query": "SELECT Global_Key__c, Name, Model__c, Manufacturer__r.Global_Key__c, VehicleCustomer__r.Global_Key__c FROM Vehicle__c",
+    "query_v1": "SELECT Name, Model__c, Manufacturer__r.Name, VehicleCustomer__r.Name FROM Vehicle__c",
+    "fieldMappings": {
+      "Global_Key__c": "Global_Key__c",
+      "Name": "Name",
+      "Model__c": "Model__c",
+      "Manufacturer__c": {
+        "lookup": {
+          "object": "Manufacturer__c",
+          "key": "Global_Key__c",
+          "field": "Manufacturer__r.Global_Key__c"
+        }
+      },
+      "VehicleCustomer__c": {
+        "lookup": {
+          "object": "VehicleCustomer__c",
+          "key": "Global_Key__c",
+          "field": "VehicleCustomer__r.Global_Key__c"
+        }
+      }
+    }
+  }
+]
