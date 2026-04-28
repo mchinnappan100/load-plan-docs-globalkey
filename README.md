@@ -1,4 +1,4 @@
-# Writing Load Plan JSON using External Id field (Global_key__c) 
+# Writing Load Plan JSON using External Id field (Global_key__c) and using Saleforce Migration Tool (SMT)
 
 > In this document we explain how to write Load Plan JSON using External Id filed ```Global_key__c```  for using data migration from one org to another org using Salesforce Migration Tool (SMT)
 
