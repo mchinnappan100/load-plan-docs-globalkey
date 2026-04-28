@@ -125,7 +125,7 @@ erDiagram
     }
 
     Manufacturer__c ||--o{ Vehicle__c : "manufactures"
-    Customer__c ||--o{ Vehicle__c : "owns"
+    VehicleCustomer__c ||--o{ Vehicle__c : "owns"
 ```
 
 #### Manufacturer__c 
