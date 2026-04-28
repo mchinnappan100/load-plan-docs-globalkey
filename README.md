@@ -208,7 +208,7 @@ VEH-004,Ford Explorer,Explorer,MFG-003,CUST-001
 
 ![Vehicle CSV Gen](img/vehicle-csv-1.png) 
 
-- Load the objects the order mentioned in the laod-plan json
+- Load the objects in the order mentioned in the laod-plan json
 
 - First time SMT will create Inserts for the object
 
