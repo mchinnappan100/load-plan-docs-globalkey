@@ -10,6 +10,7 @@
 - [UseCase](#usecase)
 - [Setup](#setup)
 - [Using SMT](#using-smt)
+- [Using Compare tool](#compare-tool)
 
 
 
@@ -241,6 +242,39 @@ VEH-004,Ford Explorer,Explorer,MFG-003,CUST-001
 ![VenicleCustomer-Update](img/vehicleCustomer-updated.png)
 
 ![Vehicle Final update](img/smt-vehicle-latest.png)
+
+
+
+## Compare Tool
+
+- Tool used [sf-data-util](https://www.npmjs.com/package/sf-data-util)
+
+```bash
+sf-data-util compare -s af102 -t af200 -l load-plan-vehicle.json -o Vehicle__c
+
+```
+
+
+### Vehicle__c 
+![vehicle-compare-1](img/vehicle-compare-1.png)
+---
+![vehicle-compare-2](img/vehicle-compare-2.png)
+---
+
+### VehicleCustomer__c
+
+```bash
+sf-data-util compare -s af102 -t af200 -l load-plan-vehicle.json -o VehicleCustomer__c
+```
+
+### Manufacturer__c
+
+```bash
+sf-data-util compare -s af102 -t af200 -l load-plan-vehicle.json -o Manufacturer__c   
+```
+
+![vehicleCustomer-compare-1](img/manufacturer-compare-1.png)
+
 
 
 
