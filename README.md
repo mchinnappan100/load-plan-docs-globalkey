@@ -267,6 +267,8 @@ sf-data-util compare -s af102 -t af200 -l load-plan-vehicle.json -o Vehicle__c
 sf-data-util compare -s af102 -t af200 -l load-plan-vehicle.json -o VehicleCustomer__c
 ```
 
+![vehicleCustomer](img/vehicleCustomer-compare-1.png)
+
 ### Manufacturer__c
 
 ```bash
