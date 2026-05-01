@@ -12,6 +12,8 @@
 - [Using SMT](#using-smt)
 - [Using Compare tool](#compare-tool)
 
+## CLI for Load-plan generation
+[Salesforce Load Plan Generator](https://www.npmjs.com/package/sf-load-plan-generator)
 
 
 ## Overview
