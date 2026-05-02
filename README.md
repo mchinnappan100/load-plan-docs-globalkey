@@ -15,6 +15,9 @@
 ## CLI for Load-plan generation
 [Salesforce Load Plan Generator](https://www.npmjs.com/package/sf-load-plan-generator)
 
+## Salesforce Migration Tool (SMT) Studio 
+[ Salesforce Migration Tool (SMT) Studio ](https://www.npmjs.com/package/smt-studio)
+
 
 ## Overview
 
