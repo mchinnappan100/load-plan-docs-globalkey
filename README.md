@@ -12,19 +12,41 @@
 - [Using SMT](#using-smt)
 - [Using Compare tool](#compare-tool)
 
+
+## Salseforce schema builder
+[sf-schema-builder](https://www.npmjs.com/package/sf-schema-builder)
+
+- Use this tool to build the schema in the source org
+### Steps
+
+1. Run ```sf project generate -n projectName``` to create sfdx project
+2. Move to sfdx project ```cd projectName``` 
+3. Run ```sf project retrieve start -o sourceOrg -x package.xml -w 20``` to retrieve the created metadata into a SFDX project folder from source org
+4. Run ```sf project deploy   start -o targetOrg -x package.xml -w 20``` to retrieve the required metadata into target org
+
+
+## App for load sequencer
+[sf-load-sequencer-ui](https://www.npmjs.com/package/sf-load-sequencer-ui)
+- Use this tool to find the order in which the objects has to be loaded. Follow that order in the load plan json
+
+
 ## CLI for Load-plan generation
 [Salesforce Load Plan Generator](https://www.npmjs.com/package/sf-load-plan-generator)
+
+- Create load plan for each object one by one using this tool  and put them in a array in the sequence given by load sequencer app (above)
+
+## SF Utils for data population
+[SF Utils](https://www.npmjs.com/package/sf-utils-cli)
+
+- Use this app's Bulk API 2.0 features to up load data input csv files
+
+
 
 ## Salesforce Migration Tool (SMT) Studio 
 [ Salesforce Migration Tool (SMT) Studio ](https://www.npmjs.com/package/smt-studio)
 
 
-## Overview
-
-**Salesforce Migraion Tool**
-([SMT](https://mchinnappan100.github.io/pages2/smt/smt.html)) is a modern desktop application designed to help data migration between Salesforce organizations. It supports complex data migrations, including single and two-step processes, using JSON load plans to define objects, queries, and field mappings. The tool leverages the Salesforce CLI and Bulk API 2.0 for secure and efficient data operations.
-
-It uses Load Plan (JSON) file for Data Migrtion between Salesforce organizations. Load Plan defines the objects, queries, and field mappings for migration. Below is an example structure with enhanced formatting:
+- It uses Load Plan (JSON) file for Data Migrtion between Salesforce organizations. Load Plan defines the objects, queries, and field mappings for migration. Below is an example structure with enhanced formatting:
 
 ```json
 [
@@ -94,7 +116,6 @@ It uses Load Plan (JSON) file for Data Migrtion between Salesforce organizations
 ```
 ----
 
-In the document we will explain how to build the load plan json for the given use case
 
 ## Usecase
 
