@@ -14,10 +14,9 @@
 
 
 
-## Flow
-```# Salesforce Data Migration Toolchain
+## Salesforce Data Migration Toolchain
+```
 
-```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                     SALESFORCE DATA MIGRATION FLOW                         │
 └─────────────────────────────────────────────────────────────────────────────┘
@@ -89,7 +88,7 @@
 │  Schema → Sequence → Load Plan → CSV Upload → Org Migration               │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
-```
+
 
 
 ## Salseforce schema builder
